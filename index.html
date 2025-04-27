@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+
+<body>
+    <section class="bg-[#fcf9f6] font-sans text-gray-800">
+        <!-- Navbar -->
+        <nav class="flex justify-between items-center px-8 py-6 bg-white shadow-md fade-in">
+            <div class="text-xl font-bold">Logo</div>
+            <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#" class="hover:text-green-600">Home</a>
+            <a href="#" class="hover:text-green-600">About</a>
+            <a href="#" class="hover:text-green-600">Article</a>
+            <a href="#" class="hover:text-green-600">Consultant</a>
+            </div>
+            <button class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 hidden md:block">
+            Button
+            </button>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center justify-between px-8 py-20 fade-in">
+            <!-- Left Image -->
+            <img src="https://images.unsplash.com/photo-1589927986089-35812386fc69?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=60" alt="Chips" class="w-32 h-32 object-cover rounded-full hidden md:block">
+
+            <!-- Center Text -->
+            <div class="text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                LUNCH<br>
+                <span class="inline-flex items-center justify-center">
+                B<img src="https://images.unsplash.com/photo-1606756791462-04af6d36fdd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=60" alt="Lunch Bowl" class="w-20 h-20 object-cover rounded-full mx-2">
+                X
+                </span>
+            </h1>
+            <p class="text-2xl text-gray-600">with best our recipe</p>
+            </div>
+
+            <!-- Right Image -->
+            <img src="https://images.unsplash.com/photo-1555243896-c709bfa0b564?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=60" alt="Jars" class="w-40 h-40 object-cover rounded hidden md:block">
+        </section>
+
+        <!-- Marquee Section -->
+        <div class="overflow-hidden whitespace-nowrap bg-white py-4 fade-in">
+            <div class="animate-marquee inline-block">
+            <span class="mx-8 font-medium">HEALTY FOOD 🥗</span>
+            <span class="mx-8 font-medium">HEALTY LIFE 🍳</span>
+            <span class="mx-8 font-medium">HEALTY FOOD 🍱</span>
+            <span class="mx-8 font-medium">HEALTY LIFE 🥗</span>
+            <span class="mx-8 font-medium">HEALTY FOOD 🍳</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#fcf9f6] text-gray-800 font-sans">
+
+        <!-- Main Section -->
+        <section class="flex flex-col md:flex-row items-center justify-between px-8 py-16 md:py-24 max-w-7xl mx-auto">
+
+            <!-- Left Content -->
+            <div class="md:w-1/3 space-y-6 mb-10 md:mb-0">
+            <h3 class="text-lg font-semibold">Build Your Lunch Box</h3>
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">IDEAL<br>PLATE</h1>
+            <p class="text-gray-600 text-lg">
+                Healthy eating isn’t about restriction — it’s about <span class="font-bold">balance</span>.
+                The Ideal Plate represents <span class="font-bold">ONE BALANCED MEAL</span>,
+                making sure you get the right nutrients for energy, health, and well-being.
+            </p>
+            <button class="bg-gray-900 text-white px-6 py-3 rounded hover:bg-gray-700 transition">
+                Button
+            </button>
+            </div>
+
+            <!-- Center Image -->
+            <div class="md:w-1/3 flex justify-center mb-10 md:mb-0">
+            <img src="https://images.unsplash.com/photo-1606756791462-04af6d36fdd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60"
+                alt="Lunch Bowl" class="rounded-full w-64 h-64 object-cover">
+            </div>
+
+            <!-- Right Card -->
+            <div class="md:w-1/3 border border-gray-400 rounded-md p-6 space-y-6 bg-white">
+            <h4 class="text-xl font-semibold">What does a balanced meal look like?</h4>
+
+            <div class="space-y-4">
+                <!-- Vegetables -->
+                <div class="flex justify-between items-start">
+                <div>
+                    <h5 class="font-bold">VEGETABLES & FRUITS</h5>
+                    <p class="text-sm text-gray-600">Rich in fiber, vitamins, and minerals, helping digestion and boosting immunity.</p>
+                </div>
+                <div class="text-right">
+                    <p class="font-bold text-3xl">50%</p>
+                    <p class="text-sm">🖐 Hand-sized</p>
+                </div>
+                </div>
+
+                <hr>
+
+                <!-- Protein -->
+                <div class="flex justify-between items-start">
+                <div>
+                    <h5 class="font-bold">PROTEIN</h5>
+                    <p class="text-sm text-gray-600">Supports muscle growth, repairs cells, and keeps you full longer.</p>
+                </div>
+                <div class="text-right">
+                    <p class="font-bold text-3xl">25%</p>
+                    <p class="text-sm">🖐 Palm-sized</p>
+                </div>
+                </div>
+
+                <hr>
+
+                <!-- Carbs -->
+                <div class="flex justify-between items-start">
+                <div>
+                    <h5 class="font-bold">CARBOHYDRATES</h5>
+                    <p class="text-sm text-gray-600">The body's main energy source, fueling daily activities and brain function.</p>
+                </div>
+                <div class="text-right">
+                    <p class="font-bold text-3xl">25%</p>
+                    <p class="text-sm">👊 Fist-sized</p>
+                </div>
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+
+    </section>
+
+    <section class="bg-green-700 text-white font-sans min-h-screen flex items-center justify-center p-6">
+        <div class="bg-green-700 max-w-md w-full space-y-8">
+
+            <!-- Title -->
+            <h2 class="text-3xl font-bold mb-4 text-left">Your BMI</h2>
+        
+            <!-- Inputs -->
+            <div class="flex space-x-4 mb-6">
+              <!-- Weight -->
+              <div class="flex flex-col w-1/2">
+                <label for="weight" class="text-sm mb-2">Weight (kg)</label>
+                <input type="number" id="weight" value="50" class="text-green-700 p-2 rounded focus:outline-none" />
+              </div>
+        
+              <!-- Height -->
+              <div class="flex flex-col w-1/2">
+                <label for="height" class="text-sm mb-2">Height (cm)</label>
+                <input type="number" id="height" value="168" class="text-green-700 p-2 rounded focus:outline-none" />
+              </div>
+            </div>
+        
+            <!-- Calculate Button -->
+            <button onclick="calculateBMI()" class="w-full bg-white text-green-700 font-semibold py-3 rounded hover:bg-gray-200 transition">
+              Calculate
+            </button>
+        
+            <!-- BMI Result -->
+            <div id="result" class="mt-6 bg-white text-green-700 rounded p-6 flex flex-col items-center space-y-4">
+              <p class="text-lg font-semibold">Your BMI is:</p>
+              <p id="bmiValue" class="text-4xl font-bold">25.6</p>
+        
+              <button class="border-2 border-yellow-500 text-yellow-700 px-4 py-2 rounded hover:bg-yellow-100 transition flex items-center space-x-2">
+                <span>Start workout</span> <span>🏋️‍♂️</span>
+              </button>
+            </div>
+        
+          </div>
+
+    </section>
+
+    <section class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
+        <h1 class="text-3xl font-bold mb-6">Macronutrient & Calorie Tracker</h1>
+
+        <!-- Macronutrient Tracker -->
+        <div class="bg-white shadow-md rounded-lg p-6 w-full max-w-md mb-10">
+            <h2 class="text-xl font-semibold mb-4">Macronutrient Tracker</h2>
+            
+            <div class="space-y-4">
+            <input id="carbs" type="number" placeholder="Carbohydrates (g)" class="w-full p-2 border rounded" />
+            <input id="protein" type="number" placeholder="Protein (g)" class="w-full p-2 border rounded" />
+            <input id="fat" type="number" placeholder="Fat (g)" class="w-full p-2 border rounded" />
+            <button onclick="calculateMacros()" class="bg-blue-500 text-white px-4 py-2 rounded w-full hover:bg-blue-600">
+                Analyze Macros
+            </button>
+            </div>
+
+            <p id="macroMessage" class="mt-4 text-center font-medium"></p>
+
+            <canvas id="macroChart" class="mt-6"></canvas>
+        </div>
+
+        <!-- Calorie Intake Checker -->
+        <div class="bg-white shadow-md rounded-lg p-6 w-full max-w-md">
+            <h2 class="text-xl font-semibold mb-4">Daily Calorie Intake Checker</h2>
+            
+            <div class="space-y-4">
+            <input id="age" type="number" placeholder="Age" class="w-full p-2 border rounded" />
+            <select id="gender" class="w-full p-2 border rounded">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <select id="activity" class="w-full p-2 border rounded">
+                <option value="">Select Activity Level</option>
+                <option value="sedentary">Sedentary</option>
+                <option value="moderate">Moderate</option>
+                <option value="active">Active</option>
+            </select>
+            <input id="calories" type="number" placeholder="Today's Calorie Intake" class="w-full p-2 border rounded" />
+            <button onclick="checkCalories()" class="bg-green-500 text-white px-4 py-2 rounded w-full hover:bg-green-600">
+                Check Intake
+            </button>
+            </div>
+
+            <p id="calorieMessage" class="mt-4 text-center font-medium"></p>
+
+            <canvas id="calorieChart" class="mt-6"></canvas>
+        </div>
+    </section>
+
+    <section class="bg-cream-200 min-h-screen flex flex-col items-center justify-center p-6 space-y-6">
+        
+     <!-- Title -->
+        <h1 class="text-4xl font-bold text-center">
+            BUILD YOUR <br> LUNCH <span class="inline-block">🍱</span> BOX
+        </h1>
+
+        <!-- Main Content -->
+        <div class="flex flex-col md:flex-row items-start gap-8">
+
+            <!-- Draggable Items -->
+            <div class="flex flex-col items-center gap-4">
+            <p class="text-lg font-semibold">Pick Your Foods:</p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <div draggable="true" class="text-4xl draggable">🍔</div>
+                <div draggable="true" class="text-4xl draggable">🥗</div>
+                <div draggable="true" class="text-4xl draggable">🍳</div>
+                <div draggable="true" class="text-4xl draggable">🍟</div>
+                <div draggable="true" class="text-4xl draggable">🍣</div>
+                <div draggable="true" class="text-4xl draggable">🍩</div>
+            </div>
+            </div>
+
+            <!-- Dropzone Bowl -->
+            <div class="relative flex flex-col items-center">
+            <div id="bowl" class="dropzone">
+                <p>Drop Here</p>
+            </div>
+            </div>
+
+        </div>
+
+        <!-- Calculate Button -->
+        <button onclick="calculateItems()" class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition">
+            Calculate 🍴
+        </button>
+
+        <!-- Result -->
+        <h1 id="result" class="text-xl font-semibold text-green-700 mt-4"></h1>
+    
+
+    </section>
+
+
+    <script src="script.js"></script>
+  
+
+  </body>
+  
+</html>

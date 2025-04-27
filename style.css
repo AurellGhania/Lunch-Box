@@ -1,0 +1,66 @@
+    
+        /* Simple fade animation */
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+          }
+          @keyframes fadeIn {
+            to { opacity: 1; }
+          }
+          
+    /* Simple marquee animation */
+    @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+      .animate-marquee {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee 15s linear infinite;
+      }
+
+      .draggable {
+        cursor: grab;
+      }
+      .dropzone {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: #D1FAE5; /* light green */
+        border: 4px solid #34D399; /* green */
+        overflow: hidden;
+      }
+      .dropzone p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: gray;
+      }
+      .emoji {
+        position: absolute;
+        font-size: 2rem;
+        pointer-events: none; /* supaya emoji yang udah ditaruh gak bisa di drag lagi */
+        position: absolute;
+        cursor: move;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      #bowl {
+        width: 300px;
+        height: 300px;
+        border: 2px dashed #ccc;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    #result {
+      display: block;
+      visibility: visible;
+    }
+    
+    
