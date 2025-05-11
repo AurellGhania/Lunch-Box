@@ -1,3 +1,6 @@
+import 'flowbite';
+
+
 let macroChartInstance;
     function calculateMacros() {
       const carbs = +document.getElementById('carbs').value;

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a>Homepage</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>About</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="navbar-center">
+    <a class="btn btn-ghost text-xl">Lunch Box</a>
+  </div>
+  <div class="navbar-end">
+   <button class="btn btn-soft btn-success rounded-full">Success</button>
+    <button class="btn btn-ghost btn-circle">
+      <div class="indicator">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /> </svg>
+        <span class="badge badge-xs badge-primary indicator-item"></span>
+      </div>
+    </button>
+  </div>
+</div>
+
+<section class="flex flex-col md:flex-row items-center justify-between px-8 py-16 md:py-24 max-w-7xl mx-auto">
+
+            <!-- Left Content -->
+            <div class="md:w-1/3 space-y-6 mb-10 md:mb-0">
+            <h3 class="text-lg font-semibold">Build Your Lunch Box</h3>
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">IDEAL<br>PLATE</h1>
+            <p class="text-gray-600 text-lg">
+                Healthy eating isn’t about restriction — it’s about <span class="font-bold">balance</span>.
+                The Ideal Plate represents <span class="font-bold">ONE BALANCED MEAL</span>,
+                making sure you get the right nutrients for energy, health, and well-being.
+            </p>
+            <button class="bg-gray-900 text-white px-6 py-3 rounded hover:bg-gray-700 transition">
+                Button
+            </button>
+            </div>
+
+            <!-- Center Image -->
+            <div class="md:w-1/3 flex justify-center mb-10 md:mb-0">
+            <img src="https://images.unsplash.com/photo-1606756791462-04af6d36fdd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60"
+                alt="Lunch Bowl" class="rounded-full w-64 h-64 object-cover">
+            </div>
+
+            <!-- Right Card -->
+            <div class="md:w-1/3 border border-gray-400 rounded-md p-6 space-y-6 bg-white">
+            <h4 class="text-xl font-semibold">What does a balanced meal look like?</h4>
+
+            <div class="space-y-4">
+                <!-- Vegetables -->
+                <div class="flex justify-between items-start">
+                <div>
+                    <h5 class="font-bold">VEGETABLES & FRUITS</h5>
+                    <p class="text-sm text-gray-600">Rich in fiber, vitamins, and minerals, helping digestion and boosting immunity.</p>
+                </div>
+                <div class="text-right">
+                    <p class="font-bold text-3xl">50%</p>
+                    <p class="text-sm">🖐 Hand-sized</p>
+                </div>
+                </div>
+
+                <hr>
+
+                <!-- Protein -->
+                <div class="flex justify-between items-start">
+                <div>
+                    <h5 class="font-bold">PROTEIN</h5>
+                    <p class="text-sm text-gray-600">Supports muscle growth, repairs cells, and keeps you full longer.</p>
+                </div>
+                <div class="text-right">
+                    <p class="font-bold text-3xl">25%</p>
+                    <p class="text-sm">🖐 Palm-sized</p>
+                </div>
+                </div>
+
+                <hr>
+
+                <!-- Carbs -->
+                <div class="flex justify-between items-start">
+                <div>
+                    <h5 class="font-bold">CARBOHYDRATES</h5>
+                    <p class="text-sm text-gray-600">The body's main energy source, fueling daily activities and brain function.</p>
+                </div>
+                <div class="text-right">
+                    <p class="font-bold text-3xl">25%</p>
+                    <p class="text-sm">👊 Fist-sized</p>
+                </div>
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+</html>
